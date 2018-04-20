@@ -9,15 +9,9 @@ $text        = $_POST["text"];
 if ( $text == "" ) {
 
 	 // This is the first request. Note how we start the response with CON
-	 $response  = "CON What service do you want? \n";
-	 $response .= "1. Plumbing \n";
-	 $response .= "2. Carpentry \n";
-	 $response .= "3. Cleaning services \n";
-	 $response .= "4. Electrician \n";
-	 $response .= "5. Gardening \n";
-	 $response .= "7. Painting \n";
-	 $response .= "8. Metal work \n";
-	 $response .= "9. Other \n";
+	 $response  = "CON Welcome to Kibarua? \n";
+	 $response .= "1. Client \n";
+	 $response .= "2. Contractor \n";
 
 }else if ( $text == "1" ) {
   // Business logic for first level response

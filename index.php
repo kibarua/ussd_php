@@ -8,7 +8,15 @@ $text        = $_POST["text"];
 
 
 ///////////////////////////////////////////////////
-
+function getServices(){
+	$ch = curl_init('http://warukira.pythonanywhere.com/api/add_client');
+	  $response_api_one = curl_exec($ch);
+	$response_api_one = json_decode($response_api_one);
+  
+  curl_close($ch);
+  
+  return $response_api_one;
+}
 
 $locations_array = ["Westlands", "Dagoretti", "Embakasi", "Kasarani", "Starehe", "Makadara", "Kamukunji", "Mathare"];
 
